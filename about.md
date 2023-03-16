@@ -3,6 +3,6 @@ layout: page
 title: "About"
 permalink: /about
 ---
-#About
+# About
 
 My name is Richard Yang.
