@@ -4,4 +4,4 @@ permalink: /about
 ---
 # About
 
-My name is **Richard Yang**.
+notalotaboutme
