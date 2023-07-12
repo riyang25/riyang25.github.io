@@ -4,4 +4,3 @@ permalink: /about
 ---
 # About
 
-notalotaboutme
