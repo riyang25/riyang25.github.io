@@ -11,3 +11,7 @@ Here's some of my current interests.
 - Computer Science. After taking AP Computer Science A in ninth grade, my focus on coding was sporadic, but recently I've been learning some rudiments of web development.  
 
 I'm the current organizer of the [Iowa City Math Circle](https://iowacitymathcircle.org). 
+
+## Trivia
+Some useless facts about me that don't belong anywhere else. 
+- I can type consistently around 110 WPM (via [typingtest.com](https://www.typingtest.com)), but have typed above 160 WPM on tests like [Monkeytype](https://monkeytype.com) (where there are only common English words randomly ordered.) Of course, my actual writing speed is much slower, on the order of ten words per minute.
