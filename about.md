@@ -3,7 +3,7 @@ title: "About"
 permalink: /about
 ---
 # About
-My name is Richard Yang. I'll be entering my junior year in high school this fall. 
+My name is Richard Yang. I'm currently a junior in high school. 
 
 Here's some of my current interests.
 - Physics. Currently I'm learning quantum mechanics from Shankar. I'm leaning towards solid state physics right now. In addition, I am studying for the [USA Physics Olympiad](https://aapt.org). 
