@@ -1,3 +1,7 @@
+---
+title: "Resources"
+permalink: /resources
+---
 # Resources
 Here are some things I've written.
 
