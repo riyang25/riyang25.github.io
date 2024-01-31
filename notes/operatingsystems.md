@@ -109,4 +109,77 @@ What is spatial locality? Very often we are accessing units of memory close by (
   - Asynchronous: CPU can keep on running cycles while hardware handles request
 - Memory mapped I/O:
   - enables direct access (vs moving I/O code and data into memory)
-- 
+
+## Week 2
+When you run an exe file, OS creates process, or a running program
+- OS timeshares CPU across multiple processes: virtualizes CPU
+  - Number of runnning processes -> number of physical cores
+  - programs can respond even while CPU is doing other tasks
+- OS has scheduler that picks a process to execute
+
+### What is a process?
+- Unique identifier (PID)
+- memory image: code and data (static), stack and heap (dynamic)
+- CPU context: registers, program counter, current operands, stack pointer
+- File descriptors: pointers to open files and devices: STDOUT, STDIN, STDERR
+  - often, STDOUT is your screen
+
+## State of a process
+- Running: currently executing
+- Ready: waiting to be scheduled
+- Blocked: suspended, not ready to run
+  - Could be waiting for some event
+  - Disk will issue an interrupt when data is ready
+- New: being created, yet to run
+- Dead: terminated
+
+Process state transitions:
+- From running to ready: descheduled
+- from running to blocked: input/output initiates
+- from blocked to running: input/output done
+
+## OS data structures
+OS maintains a data structure (e.g. a linked list) of all active processes
+information about process stored in process control block (PCB)
+- Process identifier
+- Process state
+- pointers to related processes
+- CPU context of process (saved while suspended)
+- pointers to memory locations
+- pointers to open files
+
+In Linux, you can see process information in directory `proc/<pid>`
+
+### Process APIs
+- API: Application Programming Interface
+  - functions available to write user programs
+- API provided by OS is set of system calls
+
+Should we rewrite programs for each OS?
+- POSIX API: standard set of system calls that OS must implement
+  - Portable Operating System Interface
+  - Programs written to POSIX API can run on any POSIX compliant OS
+  - most OSes are POSIX compliant
+  - ensures proram portability
+- Program language libraries: hide the details of invoking system calls
+  - `printf()` function in C library calls the write system call to `write()` to screen
+  - User programs usually don't need to worry about system calls
+
+Process related system calls (UNIX):
+- `fork()` creates new child process
+  - All processes created by forking from a parent
+  - New process created by copy of parent's memory image
+  - new process added to process list, scheduled
+  - parent and child modify memory independently
+  - On success, PID of child process returned to parent
+  - child returns 0 to parent
+  - On failure, no child created, returns -1 to parent
+  - Which runs first?
+    - Determined by scheduling policy
+    - Upon creation of child, it is in ready state
+    - up to OS to decide which one to run first
+  - Process termination scenarios
+  - `wait()`: blocks parent process until child process finishes
+  - What happens during exec?
+    - Both parent and child running same code; not very useful!
+    - Process can run  `exec()` 
