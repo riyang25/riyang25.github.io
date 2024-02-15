@@ -319,3 +319,43 @@ Segmentation
 Paging
 
 typical size of page table
+
+### Demand Paging
+Not neccessary for pages of active processes to always be in main memory;
+OS uses part of disk (swap space) to store pages not in active use
+
+Page fault
+- Present bit: indicates if page in memory or not
+- MMU reads present bit; if page present, directly access, if not, page fault
+
+Page fault handling
+- CPU to kernel mode
+- OS fetches disk address of page, issues read to disk
+- OS context switches to other process
+- when read complete, OS updates page table, marks it as ready
+- when process scheduled again, OS restarts instruction that caused page fault
+
+Summary
+- CPU issues load instruction to virtual address for code or data
+  - check CPU cache first; go to main memory in case of cache miss
+  - caches return raw data (no address associated)
+- MMU looks up translation lookaside buffer for virtual address
+  - if TLB hit, obtain physical address, fetch memory location and return to CPU
+  - if TLB miss, MMU accesses memory, walks page table, obtains page table entry
+    - if present bit in PTE, access memory
+    - if not present but valid, page fault
+    - if invalid, trap to OS for illegal access
+
+More in page faulting
+- when servicing page fault, what if OS finds there is no free page to swap in faulting page?
+- Inefficient to swap out existing and then swap in faulting page
+- OS proactively swap out pages to keep list of free pages
+- Page replacement policy
+
+Page replacement policy
+- optimal: replace page not needed for longest time in future (but OS doesn't know that)
+- FIFO
+  - not good because popular pages get swapped in and out over and over
+- LRU: not frequently used in past will be swapped out
+  - works well due to locality of references
+- 
