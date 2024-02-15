@@ -171,8 +171,7 @@ Process related system calls (UNIX):
   - New process created by copy of parent's memory image
   - new process added to process list, scheduled
   - parent and child modify memory independently
-  - On success, PID of child process returned to parent
-  - child returns 0 to parent
+  - On success, the PID of child process returned to parent
   - On failure, no child created, returns -1 to parent
   - Which runs first?
     - Determined by scheduling policy
@@ -183,11 +182,21 @@ Process related system calls (UNIX):
   - What happens during exec?
     - Both parent and child running same code; not very useful!
     - Process can run  `exec()` to load other executable to its memory image
-      - child  can run different progtram from parent
+      - child  can run different program from parent
   - in basic OS, init process created after initialization of hardware
     - init spawns a shell like `bash`
     - shell reads user command, `fork`s a child, `exec`s the command, `wait`s, then reads next command
     - common commands like `ls` are executables that are `exec`'ed by shell
+
+Example:
+```
+int main() {
+  pid = fork();
+  if (pid < 0) printf("Error"); // child process failed to be created
+  else if (pid == 0) printf("this is child process"); // in the child process, fork() returns 0
+  else printf("this is parent process); // in the parent process, fork() will return PID of child process
+}
+```
 
 ### Process Execution Mechanism
 How are processes executed by CPU?
@@ -266,3 +275,47 @@ Policies:
     - process from highest priority queue scheduled first
     - within same priority, any algorithm like RR
     - priority of process decays with age; job in top queue can get switched to lower queue
+
+## Week 4
+### Virtual Memory
+Why virtualize memory?
+- real memory is messy
+- multiple active processes timeshare CPU
+  - memory of many processes must be in memory
+- Hide complexity from user
+
+Virtual address space:
+- every process assumes it has access to memory from 0 to MAX
+- program code, heap (grows positively), stack (grows negatively)
+- CPU issues loads and stores to virtual addresses
+
+How to translate between real and virtual memory addresses?
+
+### MMU
+Memory management unit
+- OS divides virtual address space into fixed size pages
+- pages mapped to physical frames
+- page table stores mappings from virtual to physical
+- MMU has access to page table and uses it to translate
+- Context switch: CPU gives MMU pointer to new page table
+
+### Design Goals
+- Transparency: hide details from user
+- Efficiency: minimize overhead and wastage in memory and time
+- isolation, projection: user processes should not be able to access outside address space
+
+Memory Allocation
+- Malloc (C library)
+- heap: libc uses brk/sbrk system call
+- can also allocate page sized memory using mmap()
+
+### Mechanism of Address Translation
+Base and bound registers
+- place entire memory image in one chunk
+- physical address = virtual address + base
+
+Segmentation
+
+Paging
+
+typical size of page table

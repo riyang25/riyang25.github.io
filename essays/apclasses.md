@@ -6,14 +6,14 @@ In my opinion, the only two reasons you should take APs are:
 Please note what I didn't say: college admissions, GPA, and class rank.
 
 ## Against GPA
-Different schools have different GPA schemes. Colleges are aware of this, and so they'll take your raw grades. What does that imply? **Your GPA says nothing beyond what your transcript says**. Instead, colleges have a decent idea about the rigor of the courses available to you at your high school. They judge you on what you took versus what you were offered.
+Different schools have different GPA schemes. Colleges are aware of this; it's why they take your raw grades. What does that imply? **Your GPA says nothing beyond what your transcript says**. Instead, colleges have a decent idea about the rigor of the courses available to you at your high school. They judge you on what you took versus what you were offered.
 
-So that means that any GPA boost your school might give for AP classes really doesn't amount to much. When you see other people boast about their 4.57 GPA or whatever, it's really the least informative data point they could give. (Which implies something about how the rest of their stats look.)
+That means that any GPA boost your school gives for AP classes is meaningless. When you see other people boast about their 4.57 GPA or whatever, it's actually the least informative data point they could give. (Which implies something about how the rest of their stats look.)
 
-I see people say that they want to take APs for the GPA boost, and I just want to scream, that's the second worst reason to take an AP.
+So when I see people say that they want to take APs for the GPA boost, I'm internally screaming, "that's the second worst reason to take an AP."
 
 ## On Class Rank
-A few weeks ago, I was talking with a friend, and they were complaining about how many APs they had to take. Hold on, *had to take*? "It's absolutely insane. I probably have to take at least five to maintain my class rank!" I said that class rank really wasn't that important, but they didn't respond. Maybe you're also dumbfounded that I could suggest that a number on your transcript is less important than having a balanced workload and genuinely enjoyable classes. So I'll try to explain here.
+A while ago, I was talking with a friend, and they were complaining about how many APs they had to take. Hold on, *had to take*? "It's absolutely insane. I probably have to take at least five to maintain my class rank!" I said that class rank really wasn't that important, but they didn't respond. Maybe you're also dumbfounded that I would suggest that a number on your transcript is less important than having a balanced workload and genuinely enjoyable classes. So I'll try to explain here.
 
 Obviously, this is motivated by college admissions. The dominant narrative is that you need to distinguish yourself in some way from your peers to stand a chance. So let me ask, when you see other people taking a crazy number of APs, why do you think rushing to take more APs will distinguish yourself? 
 
@@ -29,9 +29,9 @@ The three questions to ask yourself before taking any class are:
 
 It should be obvious from personal experience that taking a class you have no interest in is almost never a productive learning experience. But many people aren't even considering their personal interest at all! This is the one aspect of school you can control to some extent, so don't give it up to the crowd. Please actually think about where your interest (or lack of) in a subject comes from.
 
-Next, a lot of APs really aren't that deep. In particular, a lot of the STEM APs suffer because science is interconnected, but each AP has to have a self contained curriculum. So they just substitute understanding of certain concepts with memorization. Teachers also affect the difficulty; some will legitimately be underpreparing their students for the AP exam, while others will cover material a lot more thoroughly than the AP curriculum. This depends school by school, so ask your peers!
+Next, a lot of APs really aren't that deep. In particular, many of the STEM APs suffer because science is interconnected, but each AP has to have a self contained curriculum. So for certain concepts, actual understanding is substituted by memorization. Teachers also affect the difficulty; some will actually underprepare their students for the AP exam, while others will cover material much more thoroughly than the AP curriculum. This depends school by school, so ask your peers!
 
-Finally, a course's content might not be that difficult, but a teacher can definitely make it more tedious with busywork. This is heavily dependent on your teacher, but I've taken a few APs myself where the homework simply was not that useful for learning that content, and the teacher "compensated" by assigning more of it. Once again, ask other people what their experience with a class was! Time is precious in high school, and worksheets are rarely its best use.
+Finally, a course's content might not be that difficult, but a teacher can make it more tedious with busywork. I've taken a few APs myself where the homework simply was not that useful for learning, and the teacher "compensated" by assigning more of it. Once again, ask other people what their experience with a class was! Time is precious in high school, and worksheets are rarely its best use.
 
 If you use AP classes responsibly, they're quite an excellent opportunity. An AP exam costs $100, but the credit awarded can be worth thousands of dollars in semester-hours you won't have to pay for in college. Plus, for many people they are the best way they have to challenge themselves in a topic they're interested in.
 
@@ -71,4 +71,4 @@ I also have issues with these courses, but I do think they have genuine value, w
 - AP Physics 1 and 2. Classical physics is built upon calculus; in fact, calculus was invented for physics! There are some strengths of algebra-based physics classes: experimental demonstrations, emphasis on conceptual thinking, and real world applications. But in too many high schools, the class just becomes a list of equations to memorize. If you're very interested in physics, I strongly recommend you first learn calculus, then learn calculus based physics.
 
 ## Final thoughts
-I think the biggest mistake you can make in high school is to be mindless. And when I see people taking absurd numbers of APs, I have to wonder if they really wanted it, or if they're letting other people dictate their life. When you're in high school, your job is to educate yourself, not to do what others want you to do. 
+I think the biggest mistake you can make in high school is to not take control. And when I see people taking absurd numbers of APs, I have to wonder if they really wanted it, or if they're letting other people dictate their life. In school, your job is to educate yourself, not to do what others want you to do. Coursework is the foundation of your high school experience, and one of the few things you have agency over. Don't surrender it!
