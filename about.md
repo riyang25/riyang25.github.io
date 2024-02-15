@@ -12,7 +12,7 @@ Here's some of my current interests.
 
 I'm the current organizer of the [Iowa City Math Circle](https://iowacitymathcircle.org). 
 
-Here's my [CV](/resume/cv-llt.pdf).
+Here's my [CV](./resume/index.md).
 
 ## Trivia
 Some useless facts about me that don't belong anywhere else. 
