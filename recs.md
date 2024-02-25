@@ -5,9 +5,8 @@ permalink: /recs
 # Recommendations
 Here's some stuff that I've found thought provoking, useful, or just cool.
 
-If you're in high (or middle!) school, I've compiled some of the best advice I've found [here](/404.md).
 ## Essays
-I don't agree with all of these articles, but I thought they were all interesting.
+I have a [list](/essays/essaylist.md) of essentially everything I've read on the internet I thought was worth reading.
 
 ### Education
 - [What You'll Wish You'd Known](https://paulgraham.com/hs.html)

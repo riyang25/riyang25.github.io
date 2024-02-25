@@ -359,3 +359,62 @@ Page replacement policy
 - LRU: not frequently used in past will be swapped out
   - works well due to locality of references
 - 
+
+## Week 5
+Demand paging comtinued
+
+### Pre-paging
+OS guesses in advance which page to move back to memory
+- Very hard to do because of dynamic branching (CPU doesn't know beforehand whether to jump or not)
+
+What happens when page removed from memory?
+- if page contained code, simply remove; you can reload it from disk
+- if page contained data, save the data so it can be reloaded if referred to again
+- for pages containing stack and heap data, must copy it over
+
+At any given time, page of virtual memory can exist in one or more of
+- file system
+- physical memory
+- swap space
+
+Locality of reference:
+- Temporal locality: items tend to be referenced again (while loop)
+- Spatial locality: memory close together tends to be referenced (e.g. iterating through array)
+
+This is why demand paging can work!
+
+Let p be probability of page fault
+- access time (1-p) x ma + p x page fault time
+- if memory access is 200 ns and page fault takes 25 ms
+- assuming p is very small, we have ma + p x page fault time
+
+Transparent page faults
+- Suppose we have instruction mov a, (r10)+;
+- if a isn't in memory, page fault triggered and r10 incremented
+- but when instruction restarted, r10 is wrongly incremented again! this is a **side effect**
+- other examples: block transfer instructions where source and destination overlap
+
+### LRU Policy
+Works well because of locality of references
+
+All implementations and approximations require hardware assistance
+
+Possible implementations:
+- timestamp for each page with time of last access; throw out LRU page
+  - problems: OS must record timestamp for each memory access, and need to look through all pages to find LRU
+  - O(N)
+- Keep list of pages; front is most recently used, end is least recently used
+  - on page access, move page to front of list, doubly linked list
+  - still too expensive; OS must modify multiple pointers on each memory access
+  - O(1) though!
+
+These implementations are perfect; we can try to find approximation that is less expensive
+
+### Second Chance Policy
+Essentially, pages can have one of two age values: 0 or 1
+- when a page is retrieved, set age to 0
+- during page fault, iterate through pages:
+  - if page has age 0, set age to 1
+  - if page has age 1, swap it out and stop iterating
+- Benefits: low space overhead (1 bit!), less time overhead (worst case is still the same)
+- Have to implement some structure to hold the pages (linked list)
