@@ -346,6 +346,14 @@ Summary
     - if not present but valid, page fault
     - if invalid, trap to OS for illegal access
 
+How does TLB work?
+- cache of frequently requested pages by the process
+- each entry is unique to that process
+  - same virtual addresses for two different processes map to different physical addresses
+- must be cleared out whenever switching to new process
+- What does this imply?
+  - frequent context switches reduce TLB hit rate
+
 More in page faulting
 - when servicing page fault, what if OS finds there is no free page to swap in faulting page?
 - Inefficient to swap out existing and then swap in faulting page
@@ -418,3 +426,114 @@ Essentially, pages can have one of two age values: 0 or 1
   - if page has age 1, swap it out and stop iterating
 - Benefits: low space overhead (1 bit!), less time overhead (worst case is still the same)
 - Have to implement some structure to hold the pages (linked list)
+
+### Enhanced Second Chance
+- hardware keeps a *modify* bit (in addition to reference bit)
+- 1: page has been modified
+- 0: page is same as copy on disk
+- If page is unmodified, no need to rewrite it on disk
+- (r,m)
+  - 0,0: replace!
+  - 0,1: not as good for replacement
+  - 1,0: likely used again soon, OS won't need to write it though
+  - 1,1: will be used again soon and must be written out
+- page algorithm:
+  - (0,0): replace the page
+  - (0,1): initiate I/O to write out page, lock page in memory until I/O completes, and then continue
+  - pages with reference bit 1 have it set to zero
+  - hand goes completely around once: wasn't any (0,0) page
+  - on second pass, some pages might now be (0,0)
+  - there must exist (0,0) page on third pass
+
+### Inter Process Communication
+Shared memory:
+- processes can both access same region of memory via shmget() system call
+
+Signals
+- certain set of signals supported by OS
+  - for example: ctrl C sends SIGINT signal to running process
+- signal handler: every process as default code to execute for each signal
+- some handlers can be overridden to do other things
+- Can't send very much data
+
+Sockets
+- sockets used for two processes on same or different machines to communicate
+  - TCP/UDP sockets across machines
+  - Unix sockets in local machine
+- Communicating with sockets:
+  - processes open sockets and connect them to each other
+  - Messages written into socket can be read from other process
+  - OS transfers data across socket buffers
+
+Message Queues
+- mailbox abstraction
+- process can open mailbox at specified location
+- processes can send/receive messages from mailbox
+
+Blocking vs non-blocking communication
+- some IPC actions can block
+  - reading from socket with no data, or empty message queue
+  - writing to full socket/message queue
+- system calls have versions that block or return with error code
+
+### Multiprogramming and Thrashing
+...
+
+## Week 7?
+### Threads and Concurrency
+So far we have looked at single threaded programs
+
+What's a thread?
+- Another copy of a process that executes independently
+- shares the same address space
+  - compare to fork(): child processes have a new memory image
+- each thread has separate PC, can run over different part of program
+- separate stacks for independent function calls
+
+Process vs threads
+- Parent P forks child C
+  - P and C share no memory
+  - need IPC to communicate
+  - extra copies of data and code in memory
+- Parent P executes two threads T1, T2
+  - T1 and T2 share parts of address space
+  - global variables used for communication
+  - smaller memory footprint
+- threads are like separate processes, but on same address space
+
+Parallelism: single process can effectively utilize multiple CPU cores
+- If you have cores C1, C2, and process has threads T1, T2, both threads executing at same time on separate cores
+
+Concurrency: running multiple threads/processes at same time, even on single CPU core, by interleaving execution
+
+Question: if there is no parallelism in system, is concurrency still useful?
+- even without parallelism, concurrency of threads ensures effective use of CPU when one thread blocks
+
+Scheduling Threads
+- OS schedules ready threads, much like processes
+- Context of thread (PC, registers) saved from thread control block (TCB)
+  - Each PCB has one or more TCBs
+- Threads scheduled independently by kernel are kernel threads
+- some libraries provide user-level threads
+  - user program sees 3 threads, there are fewer kernel threads
+  - user level threads have low overhead 
+
+### Race Conditions
+
+## Week 8?
+### Locks
+Consider update of variable shared between threads
+- Special lock variable `lock_t mutex`
+- `lock()` and `unlock()` functions surround critical section
+  - Said section must be executed by first thread that reaches it
+  - Other threads are blocked from proceeding until lock is released
+  - Pthreads library
+
+Goals of lock implementation
+- mutual exclusion
+- fairness: all threads should eventually get lock
+- low overhead: acquiring releasing and waiting for lock shouldn't consume many resources
+
+Condition Variable:
+- Queue that thread can put itself into when waiting on some condition
+- Another thread that makes condition true
