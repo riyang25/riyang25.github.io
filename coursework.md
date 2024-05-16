@@ -15,6 +15,12 @@
 - CS:2820 Introduction to Software Development
 - STAT:3100 Introduction to Mathematical Statistics I
 
+### Spring 2024
+- MATH:4200 Complex Variables
+- CS:3620 Operating Systems
+- CS:4350 Logic in Computer Science
+- STAT:3101 Introduction to Mathematical Statistics II
+
 ## How did I take so many university courses in high school?
 I'm very thankful for my school district's Post-Secondary Enrollment Options (PSEO) program. Students who have exhausted the high school curriculum in a subject can enroll to take undergraduate level courses at the University of Iowa, and it's completely free. Other school districts have similar programs.
 

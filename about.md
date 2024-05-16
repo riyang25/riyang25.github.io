@@ -6,9 +6,9 @@ permalink: /about
 My name is Richard Yang. I'm currently a junior in high school. 
 
 Here's some of my current interests.
-- Physics. Currently I'm learning quantum mechanics from Shankar. I'm leaning towards solid state physics right now. In addition, I am studying for the [USA Physics Olympiad](https://aapt.org). 
+- Physics. For the past year or so, I've studied for the [USA Physics Olympiad](https://aapt.org/physicsteam). In 2024, I qualified for the US Physics Team. I like solid state physics.
 - Math. My main focus used to be the [AMC Competition Series](https://maa.org), but nowadays I'm spending more time on higher math. I'm interested in learning differential geometry and topology, and I'm working through their prerequisites. 
-- Computer Science. After taking AP Computer Science A in ninth grade, my focus on coding was sporadic, but recently I've been learning some rudiments of web development.  
+- Computer Science. After taking AP Computer Science A in ninth grade, my focus on coding was sporadic, but I've taken [a lot](/coursework.md) of university level computer science courses. 
 
 I'm the current organizer of the [Iowa City Math Circle](https://iowacitymathcircle.org). 
 
