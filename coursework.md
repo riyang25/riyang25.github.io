@@ -33,5 +33,8 @@ A word of caution: If you have to pay more than a few hundred dollars to take a 
 - AP Physics C Mechanics: 5
 - AP Statistics: 4
 - AP US History: 4
+- AP Microeconomics: 5
+- AP Macroeconomics: 5
+- AP French: 3
 
 I've written a lot of my thoughts on AP classes [here](/essays/apclasses.md).
