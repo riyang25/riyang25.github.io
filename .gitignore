@@ -4,3 +4,15 @@ _site
 .jekyll-metadata
 vendor
 .DS_Store
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.dvi
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.xml
+*.bib
+*.gz
