@@ -1,5 +1,5 @@
 ---
-permalink: /apclasses
+permalink: /essays/apclasses
 ---
 # Some personal thoughts on taking APs
 In my opinion, the only two reasons you should take APs are:

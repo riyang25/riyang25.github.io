@@ -1,5 +1,5 @@
 ---
-permalink: /justcollege
+permalink: /essays/justcollege
 ---
 # Just For College
 If you're like me, you've probably come across the r/ApplyingToCollege subreddit. A typical post I stumble across goes along these lines:
