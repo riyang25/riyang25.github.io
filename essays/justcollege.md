@@ -1,3 +1,7 @@
+---
+permalink: /justcollege
+---
+# Just For College
 If you're like me, you've probably come across the r/ApplyingToCollege subreddit. A typical post I stumble across goes along these lines:
 
 > I took 23 APs, scored 1600 on SAT and 36 on ACT, and *literally worked at NASA/cured cancer/ran a 100 million dollar startup*. I still got rejected from *prestigious college*. What's even the point of it all? I wasted the entirety of high school and have nothing to show for it. When my friends went to homecoming, I was studying. It hurts seeing people around me getting in...

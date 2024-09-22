@@ -150,3 +150,87 @@ We will proceed by induction.
 
 Consider the color 101. If the color of its successor is 001, then its new color will remain 101. Thus, the pallete stops shrinking.
 ## Week 2
+### Finishing Up Cole-Vishkin for Oriented Paths
+**Lemma: if m>=4, after m iterations, pallete size <= 6**
+
+Proof: after m-3 iterations, size < 4 log^(m-3) n < 64. After applying another iteration, the pallete size is bound by 2 log 64 = 12, then 2 log 12 = 8, then 2 log 8 = 6. 
+
+**Slow Iterations**
+
+All machines with color 5 recolor themselves with the smallest available color. Repeat for colors 4 and 3, and we are done.
+
+### Extending to Oriented Trees
+An oriented tree is a tree (connected acyclic graph with no cycle) where each node knows its parent. 
+
+Lemma: there is an algorithm that can 6-color an oriented tree in log * n rounds. This is easy, Cole-Vishkin still works.
+
+How do we reduce to 3 colors from here?
+**Slow Iteration**
+
+To remove color 5:
+- shift colors down; each machine adopts the color of its parent. The root node picks the lowest available color.
+- every machine colored 5 recolors itself using the smallest available color.
+## Week 3
+### LOCAL and CONGEST Models
+To review:
+
+LOCAL:
+- bidirectional communication links
+- each machine knows its own ID, and knows that it has distinguishable ports
+  - sometimes we will add global knowledge, like the number of nodes, the maximum degree, or the diameter of the network
+- each machine only does its portion of the output
+
+If the network has n modes, IDs are represented using ceiling(c log n) bits for a constant c >=1.
+
+The CONGEST model is exactly the same as the LOCAL model, except now we impose a limit on the size of one message; essentially, it can contain O(1) IDs.
+
+**T-hop neighborhood**
+The T-hop neighborhood of a node is the subgraph of nodes with distance less than or equal to T. Suppose we run an algorithm that takes T rounds on a graph. Suppose we change the ID of a node outside the T-hop neighborhood of v. Then the output at v cannot be different, because information can only propagate a distance of T during the execution of the algorithm.
+
+**Triangle Counting Problem**
+Every node should know how many triangles are in its neighborhood (nodes it is connected to.)
+
+In the LOCAL model, this is easy.
+- round 1: send ID to all neighbors
+- round 2: send list of neighbors to all neighbors
+- round 3: compute the number of triangles
+
+In the CONGEST model, we can't send the list of neighbors in a single message. So the maximum runtime depends on the max degree of the network.
+
+### Extending Cole-Vishkin to general graphs
+Our goal is to find a delta+1 coloring; delta is the max degree.
+
+Outline of process:
+- paritition the graph into delta oriented forests.
+- color each forest using 3 colors using Cole-Vishkin
+- Merge the colorings of the delta forests into a single coloring
+
+**Decomposition**
+
+View each edge as oriented from lower to higher ID. (So nodes start by sending their IDs to each other.)
+
+Every node v with degree(v) ports, labels its ports arbitrarily as 1, 2, ..., deg(v).
+
+The forest i is induced by the edges leaving ports i. 
+
+Theorem: there is an algorithm that can (delta+1) - color a general graph in O(log* n + delta^2) rounds. 
+
+Good for small delta; worst case, runs in O(n^2) (one node connected to every other node)
+
+finish section later
+
+### Lower and Upper Bounds
+Theorem: there is no deterministic LOCAL algorithm that can 3-color an oriented path using less than 1/2 log * n - 2 rounds.
+
+Note that for this problem, we have matching upper and lower bounds! this is very rare
+
+Finding lower bound is very hard, since we need to prove that all possible algorithms cannot do better. Finding an upper bound only requires discovering better and better algorithms
+
+### Digression into random algorithms
+With randomness we can potentially achieve much better performance than deterministic algorithms. 
+- node picks temporary color uniformly randomly from availbel colors
+- if neighbors don't pick same color, choose it as permanent
+
+The probability of successfully picking a different color is at least 1/3. In expectation, at least n/3 nodes will successfuly finalize their color on the first round. So on average, this runs in O(log n) rounds. Worst case scenario is exceedingly rare.
+
+## Week 4

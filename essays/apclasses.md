@@ -1,3 +1,6 @@
+---
+permalink: /apclasses
+---
 # Some personal thoughts on taking APs
 In my opinion, the only two reasons you should take APs are:
 - Gaining college credit.
