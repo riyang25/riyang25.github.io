@@ -21,6 +21,12 @@
 - CS:4350 Logic in Computer Science
 - STAT:3101 Introduction to Mathematical Statistics II
 
+### Fall 2024
+- MATH:5400 Fundamental Groups and Covering Spaces
+- CS:5620 Distributed Systems and Algorithms
+- CS:3640 Intro to Networks
+- ECON:3300 Econometrics
+
 ## How did I take so many university courses in high school?
 I'm very thankful for my school district's Post-Secondary Enrollment Options (PSEO) program. Students who have exhausted the high school curriculum in a subject can enroll to take undergraduate level courses at the University of Iowa, and it's completely free. Other school districts have similar programs.
 
