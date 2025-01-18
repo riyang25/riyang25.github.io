@@ -1,6 +1,8 @@
 # Every Article I Found Worth Reading
 In no particular order, incomplete, inconsistently categorized. Mostly for my own reference, when I forget where an idea comes from. Unless you are me, not every article is worth reading.
 
+Edit: I'm probably going to reorganize this.
+
 I'm always eager for any recommendations. 
 - [riyang2025@gmail.com](mailto:riyang2025@gmail.com)
 

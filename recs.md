@@ -6,7 +6,7 @@ permalink: /recs
 Here's some stuff that I've found thought provoking, useful, or just cool.
 
 ## Essays
-I have a [list](/essays/essaylist.md) of essentially everything I've read on the internet I thought was worth reading.
+I have a (very incomplete )[list](/essays/essaylist.md) of essentially everything I've read on the internet I thought was worth reading.
 
 <!-- ### Education
 - [What You'll Wish You'd Known](https://paulgraham.com/hs.html)
