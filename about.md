@@ -3,12 +3,12 @@ title: "About"
 permalink: /about
 ---
 # About
-My name is Richard Yang. I'm a high school senior. 
+My name is Richard Yang. I'm a high school senior.
 
 Here's some of my current interests.
 - Physics. For the past two years or so, I've studied for the [USA Physics Olympiad](https://aapt.org/physicsteam). In 2024, I qualified for the US Physics Team, and was selected to compete at the 2024 European Physics Olympiad. 
-- Math. My main focus used to be the [AMC Competition Series](https://maa.org), but nowadays I'm spending more time on higher math.  
-- Computer Science. 
+- Math. I used to do math competitions. Nowadays I'm spending more time on higher math.  
+- Computer Science.
 
 Some things I do:
 - I'm the current organizer of the [Iowa City Math Circle](https://iowacitymathcircle.org).

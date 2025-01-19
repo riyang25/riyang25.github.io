@@ -6,7 +6,7 @@ permalink: /recs
 Here's some stuff that I've found thought provoking, useful, or just cool.
 
 ## Essays
-I have a (very incomplete )[list](/essays/essaylist.md) of essentially everything I've read on the internet I thought was worth reading.
+In progress!
 
 <!-- ### Education
 - [What You'll Wish You'd Known](https://paulgraham.com/hs.html)
@@ -29,6 +29,16 @@ Some people who consistently write things worth reading.
 - [Paul Graham](https://paulgraham.com)
 
 ## Quotes
+A reminder: [you should reverse any advice you hear](https://slatestarcodex.com/2014/03/24/should-you-reverse-any-advice-you-hear/). (Including that advice!)
+- "You all have a little bit of “I want to save the world” in you. I want you to know that it’s okay if you only save one person, and it’s okay if that person is you." (from Evan Chen, it looks like original is lost?)
+
+
+Some favorite tweets:
+- "it's weird how early on in the tech tree 'land a human on the moon and bring them home safely' was" - [@airkatakana](https://x.com/airkatakana/status/1845470137031458984)
+
+- "favorite exercise for this is opening a new doc, writing down the goal and just CoTing [chain of thought] the 80IQ obvious things one should do to achieve it. you'd think this wouldn't help but results often impress" - [@nearcyan](https://x.com/nearcyan/status/1850619159547429116), in response to [@sama](https://x.com/sama/status/1850610764467544558): "the best way to get good at something is usually to just practice actually doing the thing in question. a lot of very capable people outsmart themselves with complex plans that involve working a lot on fake prerequisites."
+
+- "'power corrupts' is a targeted memetic virus. It's designed to work on those with integrity, so they stop competing, leaving empty seats for those who show up to seize it" - [@DefenderOfBasic](https://x.com/DefenderOfBasic/status/1858572221402276007)
 
 ## Tools
 Productivity:
