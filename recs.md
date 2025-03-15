@@ -43,8 +43,3 @@ Some favorite tweets:
 ## Tools
 Productivity:
 - Cold Turkey Blocker
-- Asana
-
-Work:
-- Text editors: VSCode, NeoVim
-- PDF Viewer: Skim
