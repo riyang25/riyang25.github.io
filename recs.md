@@ -6,7 +6,7 @@ permalink: /recs
 Here's some stuff that I've found thought provoking, useful, or just cool.
 
 ## Essays
-In progress!
+I have a list [here](/essays/essaylist.md).
 
 <!-- ### Education
 - [What You'll Wish You'd Known](https://paulgraham.com/hs.html)
@@ -19,18 +19,30 @@ In progress!
 ### Society
 - [Meditations on Moloch](https://slatestarcodex.com/2014/07/30/meditations-on-moloch/) -->
 
-## Blogs
+## People
 Some people who consistently write things worth reading.
-- [Astral Codex Ten](https://www.astralcodexten.com)
 - [Alexey Guzey](https://guzey.com)
 - [Ben Kuhn](https://benkuhn.net)
+- [Brian Potter](https://www.construction-physics.com)
 - [Dan Luu](https://danluu.com)
 - [Dynomight](https://dynomight.net)
+- [Gwern](https://gwern.net)
+- [Patrick McKenzie](https://bitsaboutmoney.com)
 - [Paul Graham](https://paulgraham.com)
+- Scott Alexander, first at [Slate Star Codex](https://slatestarcodex.com), now at [Astral Codex Ten](https://www.astralcodexten.com)
+- [Zvi](https://thezvi.substack.com)
+
+Some magazines I really like:
+- [Asimov Press](https://press.asimov.com)
+- [Works in Progress](https://worksinprogress.co)
+- [Seeds of Science](https://theseedsofscience.org)
+
+The greatest podcast, bar none:
+- [Dwarkesh Patel](https://dwarkesh.com)
 
 ## Quotes
 A reminder: [you should reverse any advice you hear](https://slatestarcodex.com/2014/03/24/should-you-reverse-any-advice-you-hear/). (Including that advice!)
-- "You all have a little bit of “I want to save the world” in you. I want you to know that it’s okay if you only save one person, and it’s okay if that person is you." (from Evan Chen, it looks like original is lost?)
+- "You all have a little bit of “I want to save the world” in you. I want you to know that it’s okay if you only save one person, and it’s okay if that person is you." (from [Evan Chen](https://web.evanchen.cc/quotes.html))
 
 
 Some favorite tweets:

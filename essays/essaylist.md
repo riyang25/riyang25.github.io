@@ -1,13 +1,13 @@
-# Every Article I Found Worth Reading
-In no particular order, incomplete, inconsistently categorized. Mostly for my own reference, when I forget where an idea comes from. Unless you are me, not every article is worth reading.
+# Essays I like
+Note (2025): I made this a year ago, and then neglected to update it.
+Slowly in the process of fixing that...
 
-Edit: I'm probably going to reorganize this.
+In no particular order, incomplete, inconsistently categorized. Mostly for my own reference, when I forget where an idea comes from. 
 
 I'm always eager for any recommendations. 
 - [riyang2025@gmail.com](mailto:riyang2025@gmail.com)
 
 ## High School
-- [Why Nerds are Unpopular](https://paulgraham.com/nerds.html).
 - [What You'll Wish You'd Known](https://paulgraham.com/hs.html)
 - [The Lesson to Unlearn](https://paulgraham.com/lesson.html)
 - [Escaping High School](https://skunkledger.substack.com/p/escaping-high-school)
@@ -22,7 +22,6 @@ I'm always eager for any recommendations.
 - [Alexey Guzey on Advice](https://guzey.com/advice/)
 - [Most advice is pretty bad](https://www.samstack.io/p/most-advice-is-pretty-bad)
 - [Omens of Exceptional Talent](https://guzey.com/talent/)
-- [Theses on Sleep](https://guzey.com/theses-on-sleep/)
 - [Alexey Guzey on Productivity](https://guzey.com/productivity/)
 - [What Should You Do with Your Life?](https://guzey.com/personal/what-should-you-do-with-your-life/)
 - [Searching for outliers](https://www.benkuhn.net/outliers/)
@@ -33,10 +32,9 @@ I'm always eager for any recommendations.
 - [The Age of the Essay](https://paulgraham.com/essay.html)
 - [Why You Should Start a Blog Right Now](https://guzey.com/personal/why-have-a-blog/)
 - [Why and how to write things on the internet](https://www.benkuhn.net/writing/)
+- [Welcome to the Essay Meta](https://davekasten.substack.com/p/welcome-to-the-essay-meta)
 
 ## Startups
-- [How to Make Wealth](https://paulgraham.com/wealth.html)
-- [Do Things that Don't Scale](https://paulgraham.com/ds.html)
 
 ## Science
 
