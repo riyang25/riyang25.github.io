@@ -7,3 +7,4 @@ My name is Richard Yang. I'll be a first year at MIT this fall. I'm interested i
 
 Want to contact me?
 - [riyang2025@gmail.com](mailto:riyang2025@gmail.com)
+- [Twitter](https://x.com/rly_lite)
