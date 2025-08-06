@@ -27,20 +27,29 @@
 - CS:3640 Intro to Networks
 - ECON:3300 Econometrics
 
+### Spring 2025
+- MATH:2560 Differential Equations
+- CS:4980 Deep Learning
+- STAT:3200 Applied Linear Regression
+
 ## How did I take so many university courses in high school?
 I'm very thankful for my school district's Post-Secondary Enrollment Options (PSEO) program. Students who have exhausted the high school curriculum in a subject can enroll to take undergraduate level courses at the University of Iowa, and it's completely free. Other school districts have similar programs.
 
 A word of caution: If you have to pay more than a few hundred dollars to take a university class, I would advise against it. This applies especially to paid online courses! The internet has made self studying, for free, more accessible than ever.
 
-## APs I've taken
-- AP Calculus BC: 5
-- AP Computer Science A: 5
-- AP Human Geography: 5
-- AP Physics C Mechanics: 5
-- AP Statistics: 4
-- AP US History: 4
-- AP Microeconomics: 5
-- AP Macroeconomics: 5
-- AP French: 3
+## AP Classes
+For posterity:
+
+AP Calculus BC - 5
+AP Computer Science A - 5
+AP Human Geography - 5
+AP Physics C Mechanics - 5
+AP US History - 4
+AP Statistics - 4
+AP Microeconomics - 5
+AP Macroeconomics - 5
+AP French - 3
+AP English Literature - 3
+AP US Government - 4
 
 I've written a lot of my thoughts on AP classes [here](/essays/apclasses.md).

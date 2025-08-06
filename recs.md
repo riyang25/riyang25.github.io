@@ -54,4 +54,10 @@ Some favorite tweets:
 
 ## Tools
 Productivity:
-- Cold Turkey Blocker
+- Cold Turkey Blocker. For when you want to set down constraints you really, really don't want to violate.
+- Unhook (browser extension). Removes various distracting elements from YouTube. I struggled for years to spend less time watching YouTube, and after a week with this, my problem vanished.
+
+Privacy:
+- uBlock Origin on Firefox.
+- Mullvad VPN. 5 dollars a month.
+- Passwords on Apple. It can do two-factor authentication codes!
