@@ -5,10 +5,10 @@ permalink: /now
 # Now
 What I've been up to recently.
 
-Last updated: Aug 17 2025
+Last updated: Sept 1st 2025
 
 ## Plans
-I'm going to attend MIT this fall. The amount of things I want to learn and the amount of time I have for doing so is something like a PhD's worth of knowledge in two years. I suspect this may not be realistic.
+I'm attending MIT this fall. The amount of things I want to learn and the amount of time I have for doing so is something like a PhD's worth of knowledge in two years. I suspect this may not be realistic.
 
 The alternative to going to college is probably a startup. Unfortunately my current talents are not very directly useful for the typical startup. I'd like to figure out how to fix this.
 
