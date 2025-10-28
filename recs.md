@@ -61,3 +61,6 @@ Privacy:
 - uBlock Origin on Firefox.
 - Mullvad VPN. 5 dollars a month.
 - Passwords on Apple. It can do two-factor authentication codes!
+
+## Games
+See my [list](/reviews/gamereviews.md).
