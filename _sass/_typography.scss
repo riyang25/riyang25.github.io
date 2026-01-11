@@ -1,0 +1,157 @@
+// Typography System
+
+// Import Google Fonts - Crimson Pro
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;600;700&display=swap');
+
+// Base Typography
+body {
+  font-family: var(--font-body);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-base);
+  color: var(--color-primary);
+  background-color: var(--color-background);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// Headings
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  line-height: var(--line-height-heading);
+  font-weight: 700;
+  margin-top: var(--spacing-xl);
+  margin-bottom: var(--spacing-md);
+  color: var(--color-primary);
+}
+
+h1 {
+  font-size: var(--font-size-h1);
+  margin-top: 0;
+  margin-bottom: var(--spacing-lg);
+}
+
+h2 {
+  font-size: var(--font-size-h2);
+}
+
+h3 {
+  font-size: var(--font-size-h3);
+}
+
+h4 {
+  font-size: var(--font-size-h4);
+}
+
+// Override header h1 to be even larger
+header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: var(--spacing-sm);
+
+  a {
+    text-decoration: none;
+    color: var(--color-primary);
+    transition: color var(--transition-base);
+
+    &:hover {
+      color: var(--color-accent);
+    }
+  }
+}
+
+// Paragraphs
+p {
+  margin-bottom: var(--spacing-lg);
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+// Links
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+
+  &:hover {
+    color: var(--color-accent-hover);
+    text-decoration: underline;
+  }
+}
+
+// Lists
+ul, ol {
+  margin-bottom: var(--spacing-lg);
+  padding-left: var(--spacing-xl);
+
+  li {
+    margin-bottom: var(--spacing-sm);
+  }
+}
+
+// Blockquotes
+blockquote {
+  margin: var(--spacing-xl) 0;
+  padding: var(--spacing-md) var(--spacing-xl);
+  border-left: 4px solid var(--color-accent);
+  background-color: var(--color-code-bg);
+  font-style: italic;
+  color: var(--color-secondary);
+
+  p {
+    margin-bottom: var(--spacing-sm);
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+// Code
+code {
+  font-family: var(--font-code);
+  font-size: 0.9em;
+  background-color: var(--color-code-bg);
+  padding: 0.15em 0.4em;
+  border-radius: var(--radius-sm);
+  color: var(--color-primary);
+}
+
+pre {
+  background-color: var(--color-code-bg);
+  padding: var(--spacing-md);
+  border-radius: var(--radius-md);
+  overflow-x: auto;
+  margin-bottom: var(--spacing-lg);
+  border: 1px solid var(--color-border);
+
+  code {
+    background-color: transparent;
+    padding: 0;
+    font-size: 0.875rem;
+    line-height: 1.6;
+  }
+}
+
+// Emphasis
+strong, b {
+  font-weight: 600;
+}
+
+em, i {
+  font-style: italic;
+}
+
+// Horizontal Rule
+hr {
+  border: none;
+  border-top: 2px solid var(--color-border);
+  margin: var(--spacing-2xl) 0;
+}
+
+// Small text
+small {
+  font-size: var(--font-size-sm);
+  color: var(--color-secondary);
+}
