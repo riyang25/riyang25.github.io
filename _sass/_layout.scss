@@ -1,0 +1,92 @@
+// Layout System
+
+// Override theme wrapper for better spacing
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--spacing-xl);
+}
+
+// Header/Sidebar Improvements
+header {
+  padding-right: var(--spacing-xl);
+  position: static !important;  // Override theme's fixed positioning
+  width: auto !important;       // Override theme's fixed width
+
+  p {
+    color: var(--color-secondary);
+    font-size: var(--font-size-base);
+    line-height: var(--line-height-tight);
+  }
+
+  img {
+    border-radius: 50%;
+    margin-bottom: var(--spacing-md);
+  }
+}
+
+// Content Section
+section {
+  max-width: var(--content-max-width);
+  padding-left: 0;  // Remove left padding to shift content left
+  margin-left: 0;   // Ensure no margin pushing content right
+
+  // Wider for blog index and certain pages
+  &.wide {
+    max-width: var(--content-wide-max-width);
+  }
+}
+
+// Footer
+footer {
+  margin-top: var(--spacing-3xl);
+  padding-top: var(--spacing-xl);
+  border-top: 1px solid var(--color-border);
+
+  p {
+    color: var(--color-meta-text);
+    font-size: var(--font-size-sm);
+  }
+
+  small {
+    color: var(--color-meta-text);
+  }
+}
+
+// Responsive Design
+@media screen and (max-width: 960px) {
+  .wrapper {
+    padding: var(--spacing-md);
+  }
+
+  header {
+    padding-right: 0;
+    margin-bottom: var(--spacing-xl);
+  }
+
+  section {
+    padding-left: 0;
+    max-width: 100%;
+  }
+
+  footer {
+    margin-top: var(--spacing-2xl);
+  }
+}
+
+@media screen and (max-width: 720px) {
+  :root {
+    --font-size-base: 17px;
+    --font-size-h1: 2rem;
+    --font-size-h2: 1.75rem;
+    --font-size-h3: 1.375rem;
+  }
+
+  .wrapper {
+    padding: var(--spacing-md);
+  }
+
+  header h1 {
+    font-size: 1.75rem;
+  }
+}

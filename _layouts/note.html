@@ -1,0 +1,20 @@
+---
+layout: default
+---
+<article class="note">
+  <header class="post-header">
+    <h1>{{ page.title }}</h1>
+    {% if page.description %}
+    <p class="subtitle">{{ page.description }}</p>
+    {% endif %}
+    {% if page.course %}
+    <div class="page-meta">
+      <span class="course-tag">{{ page.course }}</span>
+    </div>
+    {% endif %}
+  </header>
+
+  <div class="post-content note-content">
+    {{ content }}
+  </div>
+</article>

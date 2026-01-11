@@ -1,0 +1,245 @@
+// Sidenote/Margin Note Styles (Tufte-inspired)
+
+// Wrapper for content that needs sidenotes
+.post-content,
+.essay,
+.note-content {
+  position: relative;
+  max-width: var(--content-max-width);
+}
+
+// Footnote references in text
+.footnote,
+a[href^="#fn:"],
+sup[id^="fnref:"] {
+  position: relative;
+}
+
+// Footnote content positioned in margin
+.footnotes,
+.footnote-list {
+  position: relative;
+
+  ol, ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  li {
+    position: relative;
+    margin-bottom: var(--spacing-lg);
+
+    // Position footnote text in the margin
+    &::before {
+      content: attr(id);
+      position: absolute;
+      left: -50px;
+      font-size: var(--font-size-sm);
+      color: var(--color-accent);
+    }
+  }
+}
+
+// Sidenote styling (for manual sidenotes)
+.sidenote,
+.marginnote {
+  float: right;
+  clear: right;
+  margin-right: -280px;
+  width: 250px;
+  margin-top: 0;
+  margin-bottom: var(--spacing-lg);
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-tight);
+  color: var(--color-secondary);
+  padding-left: var(--spacing-md);
+  border-left: 2px solid var(--color-border);
+}
+
+.sidenote-number {
+  counter-increment: sidenote-counter;
+
+  &::after {
+    content: counter(sidenote-counter);
+    font-size: var(--font-size-xs);
+    vertical-align: super;
+    color: var(--color-accent);
+    margin-left: 0.1rem;
+  }
+}
+
+// Alternative approach: Transform Jekyll footnotes to sidenotes
+// This targets the default footnote structure
+.footnotes {
+  margin-top: var(--spacing-3xl);
+  padding-top: var(--spacing-xl);
+  border-top: 2px solid var(--color-border);
+  font-size: var(--font-size-sm);
+  color: var(--color-secondary);
+
+  ol {
+    padding-left: var(--spacing-xl);
+  }
+
+  li {
+    margin-bottom: var(--spacing-md);
+
+    p {
+      display: inline;
+      margin: 0;
+    }
+  }
+
+  .reversefootnote {
+    margin-left: var(--spacing-xs);
+    text-decoration: none;
+  }
+}
+
+// For wide screens, move footnotes to the right margin
+@media screen and (min-width: 1200px) {
+  // Ensure wrapper can accommodate margin notes
+  .wrapper {
+    max-width: 1400px;
+    padding-right: 380px;  // Extra space for sidenotes
+  }
+
+  // Shift content slightly left for better balance
+  section {
+    margin-left: -40px;
+  }
+
+  // Make article or section the positioning context for footnotes
+  article.post,
+  article.essay,
+  section {
+    position: relative;
+  }
+
+  // Expand content area to accommodate sidenotes
+  .post-content,
+  .essay .post-content {
+    position: static;
+  }
+
+  // For regular pages without article wrapper
+  section:has(.footnotes) {
+    position: relative;
+  }
+
+  // Style footnote references to create positioning anchors
+  sup[id^="fnref:"] {
+    position: relative;
+  }
+
+  // Position footnotes in right margin next to their references
+  .footnotes {
+    position: absolute;
+    top: 0;
+    right: -340px;
+    width: 280px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-size: var(--font-size-sm);
+
+    ol {
+      padding-left: 0;
+      list-style: none;
+      counter-reset: footnote-counter;
+      position: relative;
+      margin: 0;
+    }
+
+    li {
+      counter-increment: footnote-counter;
+      position: absolute;
+      width: 100%;
+      margin-bottom: 0;
+      padding-left: 1.5rem;  // Space for the number on the left
+      font-size: var(--font-size-sm);
+      line-height: var(--line-height-tight);
+
+      // Fallback positions (JavaScript will override these)
+      &:nth-child(1) { top: 0; }
+      &:nth-child(2) { top: 100px; }
+      &:nth-child(3) { top: 200px; }
+      &:nth-child(4) { top: 300px; }
+      &:nth-child(5) { top: 400px; }
+      &:nth-child(6) { top: 500px; }
+      &:nth-child(7) { top: 600px; }
+      &:nth-child(8) { top: 700px; }
+      &:nth-child(9) { top: 800px; }
+      &:nth-child(10) { top: 900px; }
+
+      &::before {
+        content: counter(footnote-counter);
+        position: absolute;
+        left: 0;
+        font-size: var(--font-size-xs);
+        color: var(--color-accent);
+        vertical-align: super;
+      }
+
+      // Hide the back arrow on wide screens
+      .reversefootnote {
+        display: none;
+      }
+    }
+  }
+}
+
+// On medium screens, keep footnotes at bottom
+@media screen and (max-width: 1199px) {
+  .sidenote,
+  .marginnote {
+    float: none;
+    margin-right: 0;
+    width: 100%;
+    padding: var(--spacing-md);
+    background-color: var(--color-code-bg);
+    border-radius: var(--radius-md);
+    margin-top: var(--spacing-md);
+    margin-bottom: var(--spacing-md);
+  }
+
+  // Reset footnotes to default bottom layout
+  .footnotes {
+    position: static;
+    right: auto;
+    width: auto;
+    margin-top: var(--spacing-3xl);
+    padding-top: var(--spacing-xl);
+    border-top: 2px solid var(--color-border);
+
+    ol {
+      padding-left: var(--spacing-xl);
+      list-style: decimal;
+    }
+
+    li {
+      position: static;
+      padding-left: 0;
+      margin-bottom: var(--spacing-md);
+
+      &::before {
+        content: none;  // Remove the counter
+      }
+
+      .reversefootnote {
+        display: inline;  // Show the back arrow
+      }
+    }
+  }
+}
+
+// On mobile, ensure footnotes are readable
+@media screen and (max-width: 720px) {
+  .footnotes {
+    font-size: var(--font-size-sm);
+
+    li {
+      margin-bottom: var(--spacing-md);
+    }
+  }
+}

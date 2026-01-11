@@ -1,0 +1,9 @@
+<div class="post-meta">
+  <time datetime="{{ include.date | date_to_xmlschema }}">{{ include.date | date_to_string }}</time>
+  <span class="separator">•</span>
+  {% include reading-time.html content=include.content %}
+  {% if include.last_edited %}
+  <span class="separator">•</span>
+  <span class="last-updated">Updated {{ include.last_edited | date_to_string }}</span>
+  {% endif %}
+</div>
