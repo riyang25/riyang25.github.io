@@ -1,6 +1,6 @@
 ---
 title: "Some Misconceptions in Physics Olympiads"
-last_edited: 2025-08-14
+last_edited: 2026-1-31
 ---
 Having recently competed for the last time in high school physics olympiads, I feel like it'd be useful to try to distill some of what I've learned to other people. So I'm making a series of posts. This one is about common misconceptions people have about the process, from getting started to winning the international olympiad.
 ## Some brief background
@@ -56,7 +56,7 @@ Why do you see so many former math olympiad people doing physics? Well, who's th
 
 ### Who your competition is
 #### It is very hard to qualify for USAPhO
-For anyone who's likely to hear about the competition, I don't think there's any real obstacle at all to qualifying for the USAPhO. People can be better or worse at dealing with the quirks of its format, but I don't think it's anything impossible to overcome. Qualifying requires an actual understanding of mechanics, the ability to quickly apply it, and a little luck. Nothing else. (Obtaining those things can be nontrivial, yes.)
+For anyone who's likely to hear about the competition, I don't think there's any real obstacle at all to qualifying for the USAPhO. People can be better or worse at dealing with the quirks of the F=ma exam's format, but I don't think it's anything impossible to overcome. Qualifying requires an actual understanding of mechanics, the ability to quickly apply it, and a little luck. Nothing else. (Obtaining those things can be nontrivial, yes.)
 #### It is very easy to qualify for USAPhO
 Some people seem to think that the F=ma exam isn't very difficult at all, and that they can qualify just by having taken a mechanics class or maybe not even that. And yes, there are people who can qualify after sitting through some of AP Physics 1. (On the other hand, it is improbable to qualify with no physics experience and I don't believe any of the cases I've heard.) But you shouldn't assume that you're one of those people! If you actually want to qualify for USAPhO as a serious goal, you need to do serious work. Maybe you have good intuition, maybe you have a speed issue. I know people who know tremendous amounts of physics but never qualified for USAPhO because they weren't fast enough and didn't want to spend their time grinding. The takeaway you should have is that the F=ma exam is not quite testing the same thing as an understanding of physics. 
 #### Getting X medal is easy
