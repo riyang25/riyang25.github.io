@@ -5,14 +5,14 @@ nav {
   ul {
     list-style: none;
     padding: 0;
-    margin: var(--spacing-lg) 0;
+    margin: var(--spacing-md) 0;
 
     li {
-      margin-bottom: var(--spacing-sm);
+      margin-bottom: 0;
 
       a {
         display: inline-block;
-        padding: var(--spacing-xs) 0;
+        padding: 2px 0;
         color: var(--color-primary);
         text-decoration: none;
         font-weight: 500;
@@ -29,6 +29,20 @@ nav {
           color: var(--color-accent);
           border-bottom-color: var(--color-accent);
         }
+      }
+    }
+  }
+
+  // On mobile, lay nav out horizontally so the header doesn't fill the whole screen
+  @media screen and (max-width: 720px) {
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--spacing-xs) var(--spacing-md);
+      margin: var(--spacing-md) 0;
+
+      li {
+        margin-bottom: 0;
       }
     }
   }
@@ -147,6 +161,10 @@ nav {
     background-color: var(--color-accent-hover);
     transform: translateY(-3px);
   }
+
+  @media screen and (max-width: 720px) {
+    display: none;
+  }
 }
 
 // Tables
@@ -169,6 +187,13 @@ table {
 
   tr:hover {
     background-color: var(--color-background);
+  }
+
+  // Allow wide tables to scroll horizontally on small screens instead of overflowing
+  @media screen and (max-width: 720px) {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
   }
 }
 

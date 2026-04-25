@@ -1,8 +1,13 @@
 // Layout System
 
+// Prevent horizontal scroll from negative margins (sidenotes, wide-screen offsets)
+html, body {
+  overflow-x: hidden;
+}
+
 // Override theme wrapper for better spacing
 .wrapper {
-  max-width: 1200px;
+  max-width: 1040px;
   margin: 0 auto;
   padding: var(--spacing-xl);
 }

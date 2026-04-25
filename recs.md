@@ -9,17 +9,6 @@ Here's some stuff that I've found thought provoking, useful, or just cool.
 ## Essays
 I have a list [here](/essays/essaylist.md).
 
-<!-- ### Education
-- [What You'll Wish You'd Known](https://paulgraham.com/hs.html)
-- [MIT is Reinstating its SAT/ACT Requirement](https://mitadmissions.org/blogs/entry/we-are-reinstating-our-sat-act-requirement-for-future-admissions-cycles/)
-- [Escaping High School](https://skunkledger.substack.com/p/escaping-high-school)
-
-### Science
-- [The Control Group is Out of Control](https://slatestarcodex.com/2014/04/28/the-control-group-is-out-of-control/)
-
-### Society
-- [Meditations on Moloch](https://slatestarcodex.com/2014/07/30/meditations-on-moloch/) -->
-
 ## People
 Some people who consistently write things worth reading.
 - [Alexey Guzey](https://guzey.com)
@@ -36,7 +25,7 @@ Some people who consistently write things worth reading.
 Some magazines I really like:
 - [Asimov Press](https://press.asimov.com)
 - [Works in Progress](https://worksinprogress.co)
-- [Seeds of Science](https://theseedsofscience.org)
+- [Asterisk](https://asteriskmag.com/)
 
 The greatest podcast, bar none:
 - [Dwarkesh Patel](https://dwarkesh.com)
@@ -56,7 +45,7 @@ Some favorite tweets:
 ## Tools
 Productivity:
 - Cold Turkey Blocker. For when you want to set down constraints you really, really don't want to violate.
-- Unhook (browser extension). Removes various distracting elements from YouTube. I struggled for years to spend less time watching YouTube, and after a week with this, my problem vanished.
+- Unhook (browser extension). Removes various distracting elements from YouTube. I struggled for years to watch less Youtube, and after a week with this, my problem vanished.
 
 Privacy:
 - uBlock Origin on Firefox.

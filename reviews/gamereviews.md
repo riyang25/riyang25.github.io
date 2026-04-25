@@ -23,11 +23,13 @@ A lovely little puzzle/horror RPG. First chapter is a very tantalizing look into
 ### DDLC
 A classic for a reason. My first playthrough of this was done solely after midnight which may have not been the greatest idea.
 ### The NOexistenceN of you And me
-A very surreal game. Feels like there's something enormous contained in it that I've barely wrapped my head around. Anime girl(s) explaining existentialism to you. What's not to like?
+A very surreal game. 
 ### of the Devil
 todo
 ### 饿殍：明末千里行/The Hungry Lamb: Traveling in the Late Ming Dynasty
-It's a very good VN. Content warning: it can get quite dark, and cannibalism is a big theme. Gives you a real sense of the ruin suffered so often in Chinese history as dynasties topple. There are three "fake" endings you can encounter; you have to achieve at least two in order to get the two possible true endings. Eagerly waiting for the sequel.
+It's a very good VN. Content warning: it can get quite dark, and cannibalism is a big theme. Gives you a real sense of the ruin suffered so often in Chinese history as dynasties topple. There are three "fake" endings you can encounter; you have to achieve at least two in order to get the two possible true endings.
+### 哀鸿：城破十日记/The Weeping Swan: Ten Days of the City's Fall
+Sequel to the above. A sprawling work that attempts to do too much and ultimately falters. The ending is an agonizing tragedy, done quite well, but I can't bring myself to appreciate it after all of the flaws throughout the story. I have become more negative about the developer after playing this.
 ### 山河旅探/Murders on the Yangtze River
 A detective game like Ace Attorney, but with a rich and compelling plot tying it all together. Set in the last days of the Qing dynasty, it's a fascinating look into the interaction between China and the West at the time. Some of the puzzles are quite nontrivial, but there's a built in hint system if you get stuck. The cases are excellently written.
 ### Chrono Jotter

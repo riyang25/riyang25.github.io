@@ -10,12 +10,12 @@ Some things I did:
 
 Some things I want to do:
 - Topics I would like to learn:
-  - Physics: quantum mechanics, statistical mechanics, fluid mechanics.
+  - Physics: quantum field theory, statistical mechanics, fluid mechanics.
   - Math: complex analysis, partial differential equations, cryptography, differential geometry.
-  - Computer Science: algorithms, operating systems, compilers, information theory.
+  - Computer Science: algorithms, operating systems, information theory.
   - Economics: microeconomics, game theory, mechanism design, stochastic calculus.
   - AI: diffusion models, mech interp, LLM psychology.
-- Places I'd like to visit: Hangzhou, Singapore, Tokyo, San Fransisco.
+- Places I'd like to visit: Hangzhou, Singapore, Tokyo.
 - Skills I'd like to pick up:
   - Understanding myself.
   - Understanding other people.

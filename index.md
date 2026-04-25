@@ -7,4 +7,3 @@ My name is Richard Yang. I'm a first year at MIT. I'm interested in math, physic
 
 Want to contact me?
 - [riyang2025@gmail.com](mailto:riyang2025@gmail.com)
-- [Twitter](https://x.com/rly_lite)
