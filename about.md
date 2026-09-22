@@ -3,7 +3,7 @@ title: "About"
 permalink: /about
 ---
 # About
-Some things I did:
+Some things I've done:
 - I organized the [Iowa City Math Circle](https://iowacitymathcircle.org) from 2021-2024.
 - I helped run the 2024 and 2025 [Online Physics Olympiad](https://opho.physoly.tech). If you're interested in physics competitions, consider participating! 
 - In 2024 I went to the [European Physics Olympiad](https://eupho.ee) with the USA team, winning a gold medal.[^1]
